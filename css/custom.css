@@ -1,0 +1,11 @@
+/* Custom CSS for the theme */
+.fade-out {
+    transition: opacity 1s ease-out;
+    opacity: 0;
+}
+
+.fade-in {
+    transition: opacity 1s ease-in;
+    opacity: 1;
+    display: none;
+}
