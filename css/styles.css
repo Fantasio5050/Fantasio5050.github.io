@@ -11139,7 +11139,8 @@ body {
 }
 @media (min-width: 992px) {
   .projects-section .project-text {
-    padding: 5rem;
+    padding: 0 0 0 3rem;
+    border-left: 0.5rem solid #64a19d;
   }
 }
 
