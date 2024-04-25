@@ -57,7 +57,7 @@
 </header>
 
 <!-- À propos -->
-<section class="about-section text-center w-100" style="height: 100vh" id="about">
+<section class="about-section text-center w-100" style="min-height: 100vh" id="about">
     <div class="container px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5 justify-content-center">
             <div class="col-md-8">
@@ -74,7 +74,7 @@
 </section>
 
 <!-- BTS SIO-->
-<section class="text-center p-md-2 pb-md-4 d-flex align-items-center" style="height: 100vh" id="btssio">
+<section class="text-center p-md-2 pb-md-4 d-flex align-items-center" style="min-height: 100vh" id="btssio">
     <div class="container px-4 px-lg-5 mb-5">
         <img class="img-fluid mb-4" src="assets/img/logo-btssio.png" alt="logo-bts-sio" />
         <div class="row gx-4 gx-lg-5 justify-content-center">
@@ -83,8 +83,8 @@
                     Le <span class="fw-bold"><a href="https://www.btsinfo.fr/le-bts-sio/" target="_blank">BTS SIO</a></span> (Services Informatiques aux Organisations) est un diplôme national de l'enseignement supérieur, il se prépare en deux ans après un bac général, technologique ou professionnel. C'est un diplôme professionnalisant qui permet d'entrer directement dans la vie active. Le BTS SIO propose deux options : SLAM (Solutions Logicielles et Applications Métiers) et SISR (Solutions d'Infrastructure, Systèmes et Réseaux).
                 </p>
                 <div class="container">
-                    <button class="btn btn-primary btn-toggle me-3" id="btnSLAM">Option SLAM</button>
-                    <button class="btn btn-primary btn-toggle ms-3" id="btnSISR">Option SISR</button>
+                    <button class="btn btn-primary btn-toggle me-3 shadow" id="btnSLAM">Option SLAM</button>
+                    <button class="btn btn-primary btn-toggle ms-3 shadow" id="btnSISR">Option SISR</button>
                 </div>
 
                 <div class="collapse mt-4" id="collapseSLAM">
@@ -106,7 +106,7 @@
 </section>
 
 <!-- Projets-->
-<section class="projects-section bg-light" style="height: 100vh" id="projects">
+<section class="projects-section bg-light" style="min-height: 100vh" id="projects">
     <div class="container px-4 px-lg-5">
         <!-- Featured Project Row-->
         <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
@@ -150,60 +150,84 @@
 </section>
 
 <!-- Veille-->
-<section class="text-center bg-dark pt-5" style="height: 100vh" id="veille">
+<section class="text-center bg-dark pt-5 h-auto" style="min-height: 100vh" id="veille">
     <div class="container px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5 justify-content-center">
-            <article class="col-lg-8">
-                <h2 class="text-white mb-4">Veille</h2>
+            <article class="col-lg-8 mb-5">
+                <h2 class="text-white mb-4">Veille, définition :</h2>
                 <p class="text-white-50">
-                    La veille technologique est une activité qui consiste à se tenir au courant des avancées technologiques dans un domaine précis. Elle permet de rester informé sur les nouveautés, les tendances et les évolutions technologiques. La veille technologique est essentielle pour les professionnels de l'informatique, car elle leur permet de rester compétitifs et de proposer des solutions innovantes à leurs clients.
+                    La veille technologique est un procédé qui consiste à rester informé des avancées technologiques. Elle permet de surveiller les innovations, les tendances, les évolutions, les concurrents, etc., dans un domaine d'activité donné. La veille technologique est essentielle pour rester compétitif, anticiper les changements, et prendre des décisions éclairées.
                 </p>
                 <h3 class="text-white mt-5">Veille technologique sur la blockchain et les cryptomonnaies :</h3>
                 <p class="text-white-50 mt-3">
-                    La blockchain est une technologie de stockage et de transmission d'informations, transparente, sécurisée, et fonctionnant sans organe central de contrôle. Elle est utilisée pour sécuriser les transactions de cryptomonnaies comme le Bitcoin. La blockchain a de nombreuses applications potentielles dans d'autres domaines, comme la finance, la santé, l'immobilier, l'énergie, etc.
+                    La <span class="text-decoration-underline fw-semibold"><a href="https://fr.wikipedia.org/wiki/Blockchain" target="_blank">blockchain</a></span> est une technologie de stockage et de transmission d'informations, transparente, sécurisée, et fonctionnant sans organe central de contrôle. Elle est utilisée pour sécuriser les transactions, les contrats, les votes, etc., en garantissant l'intégrité et la confidentialité des données. Son avantage principal est la décentralisation, qui permet d'éliminer les intermédiaires et de réduire les coûts.
+                </p>
                 <ul class="text-white-50 mt-3">
                     <li>Les cryptomonnaies sont des monnaies numériques qui utilisent la technologie de la blockchain pour sécuriser les transactions et contrôler la création de nouvelles unités. Les cryptomonnaies sont de plus en plus populaires et sont utilisées comme moyen de paiement, d'investissement, et de financement participatif.</li>
                     <li>Les NFT (Non-Fungible Tokens) sont des jetons numériques uniques qui représentent la propriété d'un actif numérique, comme une œuvre d'art, un jeu vidéo, un tweet, etc. Les NFT sont utilisés pour certifier l'authenticité et la propriété d'un actif numérique, et pour le vendre sur des plateformes en ligne.</li>
                     <li>Les DAO (Decentralized Autonomous Organizations) sont des organisations décentralisées qui utilisent la technologie de la blockchain pour fonctionner de manière autonome, transparente, et sécurisée. Les DAO permettent de gérer des projets, des fonds, des votes, etc., sans avoir besoin d'un organe central de contrôle.</li>
-                    <li>Les smart contracts sont des contrats numériques auto-exécutants qui utilisent la technologie de la blockchain pour garantir l'exécution automatique des termes et des conditions d'un contrat. Les smart contracts sont utilisés pour automatiser les transactions, les paiements, les votes, etc., sans avoir besoin d'un tiers de confiance.</li>
                     <li>Les stablecoins sont des cryptomonnaies qui sont indexées sur des actifs stables, comme le dollar américain, l'euro, l'or, etc. Les stablecoins sont utilisés comme moyen de paiement, de transfert de fonds, de prêt, etc., car ils offrent une stabilité de valeur par rapport aux cryptomonnaies volatiles comme le Bitcoin.</li>
-                    <li>Les CBDC (Central Bank Digital Currencies) sont des monnaies numériques émises par les banques centrales des pays. Les CBDC sont utilisées comme moyen de paiement, de transfert de fonds, de prêt, etc., car elles offrent une sécurité, une rapidité, et une traçabilité des transactions par rapport aux monnaies fiduciaires traditionnelles.</li>
                 </ul>
-                Cette veille technologique sur la blockchain et les cryptomonnaies permet de rester informé sur les avancées, les tendances, et les évolutions de ce domaine en pleine croissance.
+                <p class="text-white-50 mt-3">
+                    Cette veille technologique sur la blockchain et les cryptomonnaies permet de rester informé sur les avancées, les tendances, et les évolutions de ce domaine en constante évolution.
                 </p>
             </article>
         </div>
-        <!-- <img class="img-fluid mt-5" src="assets/img/ipad.png" alt="Illustration de veille technologique sur l'IA" /> -->
+    </div>
+    <span class="text-light fs-4 fw-light mb-5">Dernières actualités sur les cryptomonnaies :</span>
+    <article class="mt-4 d-flex justify-content-center">
+        <div id="divFeed" class="w-75 text"></div>
+    </article>
+</section>
+<!-- Contact-->
+<section class="contact-section bg-black" id="contact">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5">
+            <div class="col-md-4 mb-3 mb-md-0">
+                <div class="card py-4 h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                        <h4 class="text-uppercase m-0">Adresse</h4>
+                        <hr class="my-4 mx-auto" />
+                        <div class="small text-black">3 Allée général lhermite </div>
+                        <div class="small text-black">87000 Limoges</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3 mb-md-0">
+                <div class="card py-4 h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-envelope text-primary mb-2"></i>
+                        <h4 class="text-uppercase m-0">Email</h4>
+                        <hr class="my-4 mx-auto" />
+                        <div class="small text-black"><a href="mailto:angejunia@gmail.com">angejunia@gmail.com</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3 mb-md-0">
+                <div class="card py-4 h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                        <h4 class="text-uppercase m-0">Téléphone</h4>
+                        <hr class="my-4 mx-auto" />
+                        <div class="small text-black">+33 7 81 07 43 47</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="social d-flex justify-content-center">
+            <a class="mx-2" href="https://github.com/Fantasio5050" target=”_blank”><i class="fab fa-github"></i></a>
+        </div>
     </div>
 </section>
-<section class="bg-dark">
-    Feed RSS sur les cryptomonnaies :
-    <div id="divFeed"></div>
-</section>
-
-
+<!-- Footer-->
+<footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; Ange Junia 2024</div></footer>
+<!-- Bootstrap core JS-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 <!-- Core theme JS-->
 <script src="js/scripts.js"></script>
 <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 <!-- Custom JS -->
 <script src="js/custom.js"></script>
-<script>
-    $('#divFeed').FeedEk({
-        FeedUrl : 'https://fr.cointelegraph.com/rss',
-        MaxCount : 5,
-        ShowDesc : true,
-        ShowPubDate:true,
-        DescCharacterLimit:100,
-        TitleLinkTarget:'_blank',
-        DateFormat : 'dd/MM/yyyy',
-        DateFormatLang : 'fr',
-        Offset: 5,
-        ShowAuthor: true,
-        AuthorLabel:"Author:",
-        Success: function (feedItems) { },
-        Error: function (error) { }
-    });
-</script>
 </body>
 </html>

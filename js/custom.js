@@ -4,6 +4,19 @@ document.addEventListener('DOMContentLoaded', function () {
     const collapseSLAM = document.getElementById('collapseSLAM');
     const collapseSISR = document.getElementById('collapseSISR');
 
+    $('#divFeed').FeedEk({
+        FeedUrl : 'https://fr.cointelegraph.com/rss',
+        MaxCount : 5,
+        ShowDesc : true,
+        ShowPubDate:true,
+        TitleLinkTarget:'_blank',
+        DateFormat : 'dd/MM/yyyy',
+        DateFormatLang : 'fr',
+        Offset: 1,
+        ShowAuthor: false,
+        Success: function (feedItems) { },
+        Error: function (error) { }
+    });
     btnSLAM.addEventListener('click', function () {
         if (!collapseSLAM.classList.contains('show')) {
             btnSISR.classList.add('btn-hidden');
