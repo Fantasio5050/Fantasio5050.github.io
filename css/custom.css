@@ -1,11 +1,19 @@
-/* Custom CSS for the theme */
-.fade-out {
-    transition: opacity 1s ease-out;
-    opacity: 0;
+.btn-toggle {
+    transition: opacity 0.5s ease, visibility 0.5s ease;
 }
 
-.fade-in {
-    transition: opacity 1s ease-in;
-    opacity: 1;
-    display: none;
+.btn-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
 }
+
+.btn-center {
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.btn-transition {
+    transition: all 500ms ease;
+}
+

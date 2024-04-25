@@ -1,22 +1,60 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
+    const btnSLAM = document.getElementById('btnSLAM');
+    const btnSISR = document.getElementById('btnSISR');
+    const collapseSLAM = document.getElementById('collapseSLAM');
+    const collapseSISR = document.getElementById('collapseSISR');
 
-    document.getElementById('collapseSLAM').addEventListener('show.bs.collapse', function() {
-        document.getElementById('btnSISR').classList.remove('fade-in');
-        document.getElementById('btnSISR').classList.add('fade-out');
+    btnSLAM.addEventListener('click', function () {
+        if (!collapseSLAM.classList.contains('show')) {
+            btnSISR.classList.add('btn-hidden');
+            setTimeout(function () {
+                btnSISR.classList.add('btn-transition');
+                btnSISR.style.transform = 'translateX(60%)';
+            }, 50);
+
+            setTimeout(function () {
+                btnSLAM.classList.add('btn-transition');
+                btnSLAM.style.transform = 'translateX(60%)';
+                setTimeout(function () {
+                    collapseSLAM.classList.add('show');
+                }, 500);
+            }, 500);
+        } else {
+            collapseSLAM.classList.remove('show');
+
+            setTimeout(function () {
+                btnSISR.classList.remove('btn-hidden');
+                btnSISR.style.transform = '';
+            }, 500);
+
+            btnSLAM.style.transform = '';
+        }
     });
 
-    document.getElementById('collapseSISR').addEventListener('show.bs.collapse', function() {
-        document.getElementById('btnSLAM').classList.remove('fade-in');
-        document.getElementById('btnSLAM').classList.add('fade-out');
-    });
+    btnSISR.addEventListener('click', function () {
+        if (!collapseSISR.classList.contains('show')) {
+            btnSLAM.classList.add('btn-hidden');
+            setTimeout(function () {
+                btnSLAM.classList.add('btn-transition');
+                btnSLAM.style.transform = 'translateX(-60%)';
+            }, 50);
 
-    document.getElementById('collapseSLAM').addEventListener('hide.bs.collapse', function() {
-        document.getElementById('btnSISR').classList.remove('fade-out');
-        document.getElementById('btnSISR').classList.add('fade-in');
-    });
+            setTimeout(function () {
+                btnSISR.classList.add('btn-transition');
+                btnSISR.style.transform = 'translateX(-60%)';
+                setTimeout(function () {
+                    collapseSISR.classList.add('show');
+                }, 500);
+            }, 500);
+        } else {
+            collapseSISR.classList.remove('show');
 
-    document.getElementById('collapseSISR').addEventListener('hide.bs.collapse', function() {
-        document.getElementById('btnSLAM').classList.remove('fade-out');
-        document.getElementById('btnSLAM').classList.add('fade-in');
+            setTimeout(function () {
+                btnSLAM.classList.remove('btn-hidden');
+                btnSLAM.style.transform = '';
+            }, 500);
+
+            btnSISR.style.transform = '';
+        }
     });
 });
