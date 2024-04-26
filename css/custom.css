@@ -39,3 +39,10 @@ p > img {
 p > img:hover {
     transform: scale(1.05);
 }
+
+#projects {
+    background-image: url("../assets/img/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}

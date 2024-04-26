@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
         Success: function (feedItems) { },
         Error: function (error) { }
     });
+
     btnSLAM.addEventListener('click', function () {
         if (!collapseSLAM.classList.contains('show')) {
             btnSISR.classList.add('btn-hidden');
